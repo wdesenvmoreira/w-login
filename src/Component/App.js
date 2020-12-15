@@ -6,12 +6,7 @@ import { Container } from '@material-ui/core';
 
 function App() {
 
-  const [isLogin, setLogin] = useState();
-
-  useEffect(()=>{
-    console.log('não da certo.')
-  },[isLogin])
-
+ 
   return (
     
 
@@ -19,7 +14,7 @@ function App() {
     
     <Container maxWidth="sm">
   <UsuarioEntrada />
-  <UsuarioSaida login={isLogin}/>
+  <UsuarioSaida />
   </Container>
      
   
